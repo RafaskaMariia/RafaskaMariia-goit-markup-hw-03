@@ -11,6 +11,7 @@
     width: 1600px;
     font-style: normal;
     Width: 1600px;
+    color: var(--font-dark);
 }
 /*логотип*/
 .WebStudio{
@@ -210,7 +211,7 @@ a[href="tel:+380961111111"] {
 
 .projects{
     display: inline;
-    
+
 }
 
 .projects a{
