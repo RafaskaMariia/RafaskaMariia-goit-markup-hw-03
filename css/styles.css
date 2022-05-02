@@ -4,25 +4,25 @@
     --font-dark: #212121 ;
     --font-middle:#757575 ;
     --font-light: #F5F4FA;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
 
 }
-.body{
+body{
     font-family: 'Roboto';
-    width: 1600px;
-    font-style: normal;
-    Width: 1600px;
     color: var(--font-dark);
+    font-style: normal;
+    text-decoration: none;
 }
 /*логотип*/
-.WebStudio{
+.webstudio{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
+    color: var(--color-black);
     text-decoration: none;
-    color: #000000;
 }
 
 .web{
@@ -30,123 +30,118 @@
 }
 
 /*верхняя линия навигация*/
-ul{
+.nav-one,
+.about-us,
+.our-works,
+.our-time,
+.adress,
+.projects{
     list-style: none;
 }
 
-.link{
+.link,
+.link-cont {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--font-dark);
     text-decoration: none;
 }
 
-.nav-one .link {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
+.link-cont{
+    color: var(--font-middle);
 }
 
-.nav-one .link:hover {
-    color: #2196F3;
+.link:hover,
+.link-cont:hover {
+    color: var(--akcent-color);
+}
+.link:focus,
+.link-cont:focus {
+    color: var(--akcent-color);
 }
 
-.nav-one .link.curret {
-    color: #2196F3;
-}
-
-.banner{
-    background-color: var(--main-color);
-    height: 600px;
+.link.curret {
+    color:var(--akcent-color);
 }
 
 /*шапка*/
+.banner{
+    background-color: var(--main-color);
+}
 
-.banner > h1 {
-    font-style: normal;
+.title-banner {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding-top: 200px;
+    color: var(--color-white);
 }
 
 .button-order{
-    background: #2196F3;
+    background: var(--akcent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;    
+    letter-spacing: 0.06em;
     justify-content: center; 
 }
 .button-order:hover{
     background-color: #188CE8;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--color-white);
     cursor: pointer;
 }
 
 .text-order{
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
+    line-height: 1.9;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 /* особенности о нас*/
 .title{
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--font-dark);
 }
 
-.about-us {
-    column-count: 4;
-}
 .about-us-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:var(--font-dark);
+    color: var(--font-dark);
 }
-li > p {
-    font-style: normal;
+.text-about-us {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--font-middle);
 }
 
 .team{
     background-color: var(--font-light);
-    height: 648px;
 }
 
 .name{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--font-dark);
@@ -154,7 +149,7 @@ li > p {
 .position{
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--font-middle);
@@ -162,37 +157,33 @@ li > p {
 }
 
 .card{
-    width: 270px;
-    height: 368px;
-    background-color: white;
+    background-color: var(--color-white);
 }
 
 /*footer*/
 .footer{
     background-color: var(--main-color);
-    height: 252px;
 }
 
 .studio-white{
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
-a[href="http://surl.li/pcxl"] {
-    font-style: normal;
+.footer-tel,
+.footer-mail,
+.footer-adress {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--color-white);
+
 }
 
-a[href="mailto:info@devstydio.com"],
-a[href="tel:+380961111111"] {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+.footer-mail,
+.footer-tel {
     color: rgba(255, 255, 255, 0.6); 
 }
 .filters{
@@ -205,7 +196,13 @@ a[href="tel:+380961111111"] {
 
 .filter:hover{
     background-color: var(--akcent-color);
-    color: white;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.filter:focus{
+    background-color: var(--akcent-color);
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -214,24 +211,24 @@ a[href="tel:+380961111111"] {
 
 }
 
-.projects a{
+.work-examples{
     text-decoration: none;
     color: var(--font-dark);
 
 }
 
-.projects h2  {
+.work-ex-name  {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--font-dark);
 }
 
-.projects p {
+.work-ex-type {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--font-middle);
 }

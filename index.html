@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&family=Raleway:ital,wght@0,400;1,600&family=Roboto:wght@100;300;400;500;700;900&family=Water+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" >
     <title>Document</title>
 </head>
 <body class="body">
@@ -15,23 +15,26 @@
     <header class="header">
         <!--Верхняя линия-->
         <nav>
-            <a class="WebStudio" href=""><span class="web">Web</span>Studio</a>
+            <a class="webstudio" href="">
+                <span class="web">Web</span>Studio
+            </a>
             <ul class="nav-one">
-                <li class="li-link"><a href="./index.html" class="link curret">Студия</a></li>
-                <li class="li-link"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="li-link"><a href="" class="link">Контакты</a></li>
+                <li><a class="link curret" href="./index.html">Студия</a></li>
+                <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
             <ul class="nav-one">
-                <li><a class="link" href="mailto:info@devstydio.com">info@devstydio.com</a></li>
-                <li><a class="link" href="tel:+380961111111">+380961111111</a></li>
+                <li><a class="link-cont" href="mailto:info@devstydio.com">info@devstydio.com</a></li>
+                <li><a class="link-cont" href="tel:+380961111111">+380961111111</a></li>
             </ul>
     </header>    
+
 
     <main>
         <!--Шапка-->
         <section class="banner">
-            <h1>Эффективные решения <br>для вашего бизнеса<br/></h1>
+            <h1 class="title-banner">Эффективные решения <br>для вашего бизнеса<br/></h1>
             <button type="button" class="button-order">
                 <span class="text-order">Заказать услуга</span>
             </button>
@@ -44,28 +47,28 @@
             <ul class="about-us">
                 <li>
                     <h3 class="about-us-title">Внимание к деталям</h3>
-                    <p>Идейные соображения, а также 
+                    <p class="text-about-us">Идейные соображения, а также 
                         начало повседневной работы 
                         по формированию позиции.</p>
                 </li>
 
                 <li>
                     <h3 class="about-us-title">Пунктуальность</h3>
-                    <p>Задача организации, в особенности 
+                    <p class="text-about-us">Задача организации, в особенности 
                         же рамки и место обучения кадров 
                         влечет за собой.</p>
                 </li>
 
                 <li>
                     <h3 class="about-us-title">Планирование</h3>
-                    <p>Равным образом консультация с 
+                    <p class="text-about-us">Равным образом консультация с 
                         широким активом в значительной степени 
                         обуславливает.</p>
                 </li>
 
                 <li>
                     <h3 class="about-us-title">Современные технологии</h3>
-                    <p>Значимость этих проблем настолько 
+                    <p class="text-about-us">Значимость этих проблем настолько 
                         очевидна, что реализация плановых 
                         заданий.</p>
                 </li>
@@ -75,7 +78,7 @@
         <!--Чем занимаемся-->
         <section >
             <h2 class="title">Чем мы занимаемся</h2>
-            <ul class="about-us">
+            <ul class="our-works">
                 <li><img src="img/box1.jpg" alt="разрработка для decktop" width="370" height="294"></li>
                 <li><img src="img/box2.jpg" alt="разрработка для mobile" width="370" height="294"></li>
                 <li><img src="img/box3.jpg" alt="дизаин" width="370"></li>
@@ -85,7 +88,7 @@
         <!--Наша команда-->
         <section class="team">
             <h2 class="title">Наша команда</h2>
-            <ul class="about-us">
+            <ul class="our-time">
                 <li class="card">
                         <img src="img/img(1).jpg" alt="Product Designer" width="270" />
                         <h3 class="name">Игорь Демьяненко</h3>
@@ -114,15 +117,14 @@
 
     <!--Footer-->
     <footer class="footer">
-        <a class="WebStudio" href="">
-            <span class="web">Web</span>
-            <span class="studio-white">Studio</span>
+        <a class="webstudio" href="">
+            <span class="web">Web</span><span class="studio-white">Studio</span>
         </a>
         <address>
-            <ul>
-                <li><a class="link studio-white" href="http://surl.li/pcxl">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="link studio-white" href="mailto:info@devstydio.com">info@devstydio.com</a></li>
-                <li><a class="link studio-white" href="tel:+380961111111">+380961111111</a></li>
+            <ul class="adress">
+                <li><a class="footer-adress" href="http://surl.li/pcxl">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li><a class="footer-mail" href="mailto:info@devstydio.com">info@devstydio.com</a></li>
+                <li><a class="footer-tel" href="tel:+380961111111">+380961111111</a></li>
             </ul>  
         </address>    
     </footer>
