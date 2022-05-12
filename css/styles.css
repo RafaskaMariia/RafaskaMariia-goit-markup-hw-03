@@ -300,11 +300,21 @@ img{
     display: none;
 }
 .buttons{
-    padding-bottom: 16px;
+    display: flex;
+    list-style: none;
+    justify-content:center;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
+
 }
 
+.li-button{
+    margin-right: 8px;
+}
+
+.li-button:last-of-type{
+    margin-right: 0px;
+}
 .filter{
     font-family: 'Roboto';
     background-color:var(--font-light);
@@ -317,14 +327,10 @@ img{
     padding: 6px 22px;
     border: 1px solid transparent;
     border-radius: 4px;
-    margin-right: 8px;
 }
 
-.filter:last-of-type{
-    margin-right: 0px;
-}
+
 .filters{
-
 }
 .filter{
     background-color: var(--font-light);
@@ -354,7 +360,6 @@ img{
     margin-right: 30px;
 }
 .li-work-examples:nth-child(3n){
-    margin-bottom: 0px;
     margin-right: 0px;
 }
 
