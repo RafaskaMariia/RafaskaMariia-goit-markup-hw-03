@@ -403,9 +403,12 @@ img{
     color: var(--color-white);
 }
 
+.address-one{
+    margin-top: 20px; 
+}
+
  .address{
     font-style: normal;
-     margin-top: 20px;
  }
 
 .footer-tel,
