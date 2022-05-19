@@ -125,6 +125,15 @@ body{
     color: var(--akcent-color);
 }
 
+.icon-mail{
+    width: 16px;
+    height: 12px;
+}
+
+.icon-tel{
+    width: 10px;
+    height: 16px;
+}
 
 /*шапка*/
 .banner{
