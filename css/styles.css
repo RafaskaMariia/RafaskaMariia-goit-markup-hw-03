@@ -120,7 +120,7 @@ body{
     color:var(--akcent-color);
 }
 
-.icon-mail:focus{
+.icon-mail:hover{
     color: var(--akcent-color);
 }
 
