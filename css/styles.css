@@ -120,6 +120,7 @@ body{
     color:var(--akcent-color);
 }
 
+
 /*шапка*/
 .banner{
     background-color: var(--main-color);
@@ -198,6 +199,35 @@ body{
 /* особенности о нас*/
 .title-feature{
     padding-bottom: 0;
+}
+
+.li-about-us::before{
+    display: block;
+    content: "";
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--font-light);
+    background-image: url("../img/svg/antenna\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-bottom: 30px;
+}
+
+.antenna::before{
+    background-image: url("../img/svg/antenna\ 1.svg");
+}
+
+.clock::before{
+    background-image: url("../img/svg/clock\ 1.svg");
+}
+
+.diagram::before{
+    background-image: url("../img/svg/diagram\ 1.svg");
+}
+
+.astronaut::before{
+    background-image: url("../img/svg/astronaut\ 1.svg");
 }
 
 .visually-hidden {
