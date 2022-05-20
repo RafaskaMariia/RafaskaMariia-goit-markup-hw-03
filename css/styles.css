@@ -104,7 +104,9 @@ body{
 }
     
 .link-cont{
+    display: flex;
     color: var(--font-middle);
+    align-items: center;
 }
 
 .link:hover,
@@ -120,20 +122,25 @@ body{
     color:var(--akcent-color);
 }
 
-.icon-mail:hover,
-#icon-mail:hover{
-    color: var(--akcent-color);
-}
-
 .icon-mail{
     width: 16px;
     height: 12px;
+    fill: var(--font-middle);
+    margin-right: 10px;
 }
 
 .icon-tel{
     width: 10px;
     height: 16px;
+    fill: var(--font-middle);
+    margin-right: 10px;
 }
+
+.icon-mail:hover,
+.icon-tel:hover {
+    fill: var(--akcent-color);
+}
+
 
 /*шапка*/
 .banner{
@@ -149,7 +156,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
 }
 
@@ -334,6 +341,56 @@ img{
     letter-spacing: 0.03em;
     color: var(--font-middle);
 }
+
+.spisok-soshial{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+    margin-left: 32px;
+}
+
+.icon-soshial:not(:last-child){
+    margin-right: 10px;
+}
+
+.link-soshial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    color:white;
+}
+
+.svg-icon{
+    fill: currentColor;
+}
+
+.link-soshial:hover,
+.link-soshial:focus {
+  background-color: var(--akcent-color);
+}
+
+/*.icon-inst{
+    fill: #757575;
+}
+
+.icon-inst:hover{
+    fill: white;
+}*/
+
+.icon-inst,
+.icon-twit,
+.icon-fb,
+.icon-in{
+    width: 44px;
+    height: 44px;
+}
+
 
 .card{
     background-color: var(--color-white);
