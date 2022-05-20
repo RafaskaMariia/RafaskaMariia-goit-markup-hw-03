@@ -6,10 +6,11 @@
     --font-light: #F5F4FA;
     --color-black: #000000;
     --color-white: #FFFFFF;
+    --color-svg: #AFB1B8;
 
 }
 
-h1, h2, h3, p, ul, a, li {
+h1, h2, h3,h4, p, ul, a, li {
     padding: 0;
     margin: 0;
 }
@@ -105,14 +106,15 @@ body{
     
 .link-cont{
     display: flex;
-    color: var(--font-middle);
     align-items: center;
+    color: var(--font-middle);
 }
 
 .link:hover,
 .link-cont:hover {
     color: var(--akcent-color);
 }
+
 .link:focus,
 .link-cont:focus {
     color: var(--akcent-color);
@@ -125,15 +127,15 @@ body{
 .icon-mail{
     width: 16px;
     height: 12px;
-    fill: var(--font-middle);
+    fill: currentColor;
     margin-right: 10px;
 }
 
 .icon-tel{
     width: 10px;
     height: 16px;
-    fill: var(--font-middle);
     margin-right: 10px;
+    fill: currentColor;
 }
 
 .icon-mail:hover,
@@ -141,6 +143,10 @@ body{
     fill: var(--akcent-color);
 }
 
+.icon-mail:focus,
+.icon-tel:focus {
+    fill: var(--akcent-color);
+}
 
 /*шапка*/
 .banner{
@@ -191,7 +197,8 @@ body{
 
 }
 
-.button-order:hover{
+.button-order:hover,
+.button-order:focus{
     background-color: #188CE8;
     color: var(--color-white);
     cursor: pointer;
@@ -321,7 +328,7 @@ img{
 
 .title-portfolio{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .name{
@@ -342,7 +349,7 @@ img{
     color: var(--font-middle);
 }
 
-.spisok-soshial{
+.spisok-social{
     list-style: none;
     display: flex;
     padding: 0px;
@@ -351,11 +358,11 @@ img{
     margin-left: 32px;
 }
 
-.icon-soshial:not(:last-child){
+.icon-social:not(:last-child){
     margin-right: 10px;
 }
 
-.link-soshial{
+.link-social{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,25 +370,18 @@ img{
     height: 44px;
     border-radius: 50px;
     border: none;
-    color:white;
+    color:var(--color-svg);
 }
 
 .svg-icon{
     fill: currentColor;
 }
 
-.link-soshial:hover,
-.link-soshial:focus {
-  background-color: var(--akcent-color);
+.link-social:hover,
+.link-social:focus {
+    color: var(--color-white);
+    background-color: var(--akcent-color);
 }
-
-/*.icon-inst{
-    fill: #757575;
-}
-
-.icon-inst:hover{
-    fill: white;
-}*/
 
 .icon-inst,
 .icon-twit,
@@ -391,18 +391,46 @@ img{
     height: 44px;
 }
 
-
 .card{
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     
 }
-
 .card:not(:last-child){
     margin-right: 30px;
 }
 
+/*Постоянные клиенты*/
+.clients{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.li-clients:not(:last-child){
+    margin-right:30px;
+}
+
+.link-clients{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color-white);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color:var(--color-svg);
+}
+
+.link-clients:hover,
+.link-clients:focus {
+    border: 1px solid var(--akcent-color);
+    color: var(--akcent-color);
+    cursor: pointer;
+}
 
  /*СТРАНИЦА 2*/
 
@@ -523,7 +551,8 @@ img{
 }
 
 .address-one{
-    margin-top: 20px; 
+    margin-top: 20px;
+    width: 231px; 
 }
 
  .address{
@@ -549,4 +578,54 @@ img{
 
 .li-address:not(:last-child){
     margin-bottom: 9px;
+}
+
+.conteiner-footer-cont{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.title-footer{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.footer-social{
+    margin-left: 70px;
+}
+
+.spisok-social-footer{
+    list-style: none;
+    display: flex;
+}
+.icon-social-footer:not(:last-child){
+    margin-right: 10px;
+}
+
+.link-social-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    background-color:var(--color-svg);
+    color:var(--color-white);
+}
+
+.link-social-footer:hover,
+.link-social-footer:focus {
+    color: var(--color-white);
+    background-color: var(--akcent-color);
 }
